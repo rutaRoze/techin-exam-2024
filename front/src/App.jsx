@@ -5,6 +5,7 @@ import NavBar from './components/NavBar.jsx';
 import HomePage from './components/homepage/HomePage.jsx';
 import { AuthProvider } from './components/authentication/AuthContext.jsx';
 import LoginPage from './components/loginpage/LoginPage.jsx';
+import CategoryPage from './components/categorypage/CategoryPage.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/category" element={<CategoryPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </AuthProvider>
