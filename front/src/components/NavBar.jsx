@@ -35,11 +35,6 @@ function NavBar() {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link text-dark" aria-disabled="true" to="/register">
-                  Register
-                </Link>
-              </li>
               <li className="nav-item ">
                 <Link className="nav-link text-dark" aria-disabled="true" to="/login">
                   Login

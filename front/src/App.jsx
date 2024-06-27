@@ -4,6 +4,7 @@ import ErrorPage from './components/errorpage/ErrorPage.jsx';
 import NavBar from './components/NavBar.jsx';
 import HomePage from './components/homepage/HomePage.jsx';
 import { AuthProvider } from './components/authentication/AuthContext.jsx';
+import LoginPage from './components/loginpage/LoginPage.jsx';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AuthProvider>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </AuthProvider>
