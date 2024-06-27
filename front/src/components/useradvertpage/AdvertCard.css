@@ -1,0 +1,25 @@
+/*.imageSize {*/
+/*    padding: 10px 10px;*/
+/*    max-width: 70%;*/
+/*    object-fit: cover;*/
+/*}*/
+
+.advert-card {
+    width: 18rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image-size {
+    width: 100%;
+    height: auto;
+}
+
+.read-more-button {
+    align-self: center;
+    margin-top: auto;
+    width: 60%;
+}
