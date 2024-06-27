@@ -10,6 +10,7 @@ import AdvertPage from './components/advertmanagepage/AdvertPage.jsx';
 import AdvertUpdate from './components/advertmanagepage/AdvertUpdate.jsx';
 import AdvertDetailsPage from './components/advertdetailspage/AdvertDetailsPage.jsx';
 import UserAdvertPage from './components/useradvertpage/UserAdvertPage.jsx';
+import RegistrationPage from './components/registrationpage/RegistrationPage.jsx';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegistrationPage />} />
           <Route path="/category" element={<CategoryPage />} />
           <Route path="/advert" element={<AdvertPage />} />
           <Route path="/update/:id" element={<AdvertUpdate />} />
