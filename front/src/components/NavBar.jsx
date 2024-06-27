@@ -46,7 +46,7 @@ function NavBar() {
                 </Link>
               </li>
               <li className="nav-item ">
-                <Link className="nav-link text-dark" aria-disabled="true" to="/adverts">
+                <Link className="nav-link text-dark" aria-disabled="true" to="/advert">
                   Manage Adverts
                 </Link>
               </li>
