@@ -39,6 +39,16 @@ public class ApplicationExceptionHandler {
         return buildResponse(ex.getMessage(), HttpStatus.CONFLICT);
     }
 
+    @ExceptionHandler(NoChangesMadeException.class)
+    public ResponseEntity<Object> handle(NoChangesMadeException ex) {
+        return buildResponse(ex.getMessage(), HttpStatus.CONFLICT);
+    }
+
+    @ExceptionHandler(CategoryAlreadyExist.class)
+    public ResponseEntity<Object> handle(CategoryAlreadyExist ex) {
+        return buildResponse(ex.getMessage(), HttpStatus.CONFLICT);
+    }
+
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<Object> handle(HttpMessageNotReadableException ex) {
         return buildResponse(ex.getMessage(), HttpStatus.BAD_REQUEST);
