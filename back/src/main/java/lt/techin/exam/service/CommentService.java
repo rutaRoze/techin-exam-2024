@@ -38,17 +38,17 @@ public class CommentService {
         User user = userRepository.findById(commentRequest.getUserId())
                 .orElseThrow(() -> new EntityNotFoundException("User not found by ID: " + commentRequest.getUserId()));
 
-        Advert book = advertRepository.findById(commentRequest.getAdvertId())
+        Advert advert = advertRepository.findById(commentRequest.getAdvertId())
                 .orElseThrow(() -> new EntityNotFoundException("Book not found by ID: " + commentRequest.getAdvertId()));
 
-        Comment commentToSave = commentMapper.requestToComment(commentRequest, user, book);
+        Comment commentToSave = commentMapper.requestToComment(commentRequest, user, advert);
         Comment savedComment = commentRepository.save(commentToSave);
 
         return commentMapper.commentToResponse(savedComment);
     }
 
     public List<CommentResponse> findCommentsByAdvert(Long id) {
-        return commentRepository.findByBookId(id).stream()
+        return commentRepository.findByAdvertId(id).stream()
                 .map(comment -> commentMapper.commentToResponse(comment))
                 .collect(Collectors.toList());
     }

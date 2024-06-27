@@ -42,7 +42,7 @@ public class CommentController {
         return new ResponseEntity<>(commentResponse, HttpStatus.CREATED);
     }
 
-    @GetMapping("/book/{id}")
+    @GetMapping("/advert/{id}")
     public ResponseEntity<List<CommentResponse>> getCommentsByAdvert(
             @Min(1) @PathVariable Long id) {
         List<CommentResponse> commentResponse = commentService.findCommentsByAdvert(id);
