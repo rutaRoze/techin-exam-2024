@@ -8,6 +8,7 @@ import LoginPage from './components/loginpage/LoginPage.jsx';
 import CategoryPage from './components/categorypage/CategoryPage.jsx';
 import AdvertPage from './components/advertmanagepage/AdvertPage.jsx';
 import AdvertUpdate from './components/advertmanagepage/AdvertUpdate.jsx';
+import AdvertDetailsPage from './components/advertdetailspage/AdvertDetailsPage.jsx';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/category" element={<CategoryPage />} />
           <Route path="/advert" element={<AdvertPage />} />
           <Route path="/update/:id" element={<AdvertUpdate />} />
+          <Route path="/details/:id" element={<AdvertDetailsPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </AuthProvider>
