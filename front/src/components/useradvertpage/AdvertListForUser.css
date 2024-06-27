@@ -1,0 +1,7 @@
+.background-color-advert-list {
+    background-color: #eafdf1;
+    min-height: 100vh; /* Ensure minimum height covers entire viewport */
+    display: flex; /* Flexbox to center content */
+    align-items: start; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}

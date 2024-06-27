@@ -1,0 +1,11 @@
+.create-category-button {
+    background-color: #399a88;
+    border-radius: 8px;
+    width: 5rem;
+    height: 38px;
+    border: none;
+}
+
+.create-category-button:hover {
+    background-color: #58ccb1;
+}
