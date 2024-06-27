@@ -1,0 +1,18 @@
+.home-page-style {
+    /*background-color: #f1faf6;*/
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home-button {
+    background-color: #399a88 !important;
+    color: #000000 !important;
+    border: none;
+}
+
+.home-button:hover {
+    background-color: #58ccb1 !important;
+}

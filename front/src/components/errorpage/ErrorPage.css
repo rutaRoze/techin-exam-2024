@@ -1,0 +1,22 @@
+.error-page-style {
+    /*background-color: #f1faf6;*/
+
+}
+
+.error-page-button {
+    background-color: #399a88;
+    border-radius: 8px;
+    width: 10rem;
+    height: 38px;
+    border: none;
+}
+
+.error-page-button:hover {
+    background-color: #58ccb1;
+}
+
+.error-img {
+    border-radius: 50%;
+    width: 40%;
+}
+
